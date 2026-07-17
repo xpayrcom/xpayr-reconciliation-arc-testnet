@@ -37,6 +37,10 @@ Use an XPayr test key before live credentials. Never expose `sk_test_*`, `sk_liv
 
 This repository supports **Arc Testnet** only. It does not claim Arc Mainnet production availability or endorsement by Circle. Arc is a trademark of Circle Internet Group, Inc. and/or its affiliates.
 
+## Live reconciliation evidence
+
+The committed [`arc-testnet-payment-split.json`](evidence/arc-testnet-payment-split.json) fixture points to a real completed XPayr transaction. The scheduled read-only workflow retrieves the raw RPC receipt, applies the same allowlist and event-normalization path as the indexer, decodes `PaymentSplit`, validates every amount and recipient, and cross-checks the public XPayr payment status. It never mutates payment state.
+
 ## Documentation
 
 - [Developer Hub](https://xpayr.com/developers)
