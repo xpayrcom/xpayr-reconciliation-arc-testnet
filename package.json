@@ -1,0 +1,9 @@
+{
+  "name": "xpayr-reconciliation-arc-testnet",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test tests/*.test.mjs", "scan": "node scripts/scan.mjs" },
+  "dependencies": { "ethers": "^6.15.0" },
+  "engines": { "node": ">=18" }
+}

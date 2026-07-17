@@ -1,0 +1,17 @@
+[
+  {
+    "type": "event",
+    "name": "PaymentSplit",
+    "anonymous": false,
+    "inputs": [
+      { "name": "paymentId", "type": "bytes32", "indexed": true },
+      { "name": "payer", "type": "address", "indexed": true },
+      { "name": "token", "type": "address", "indexed": true },
+      { "name": "amount", "type": "uint256", "indexed": false },
+      { "name": "platformAmount", "type": "uint256", "indexed": false },
+      { "name": "vendorAmount", "type": "uint256", "indexed": false },
+      { "name": "platformWallet", "type": "address", "indexed": false },
+      { "name": "vendorWallet", "type": "address", "indexed": false }
+    ]
+  }
+]
