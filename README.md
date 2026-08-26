@@ -25,6 +25,8 @@ npm install
 npm test
 ```
 
+Set `ARC_TESTNET_RPC_URL` only when you need to pin a specific official Arc Testnet endpoint; the known-payment verifier falls back across the published Arc RPC set when a historical receipt is temporarily missing on the primary endpoint.
+
 ## Operational boundary
 
 This repository scans only an explicitly configured XPAYR splitter address and the canonical `PaymentSplit` event. It produces a derived reconciliation record and never mutates an XPayr payment session.
